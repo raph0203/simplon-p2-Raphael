@@ -1,0 +1,86 @@
+body 
+     {   
+      margin-top: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      } 
+
+h1 
+{   
+     color: rgb(251, 251, 253); 
+       position: absolute;   
+        top: 20px;    
+        left: 190px; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+  }
+
+  
+
+#bloc_page 
+     {  
+      
+      height: 100px;
+      background-color:#10459a;
+      } 
+
+#titre_principal
+      {
+       width: 50%;
+       height: 100%;
+       float: left;
+       } 
+
+#connexion {  
+      
+            color:rgb(251, 251, 253);
+            } 
+
+#inscription
+     {margin-left: 0%;
+      height: 450px;
+      background-color: rgba(235, 235, 241, 0.842);
+      text-align: left;
+      bottom: 30%;
+      } 
+
+#facebook 
+     { 
+      margin-left: 0%;
+      width:800px ;  
+      height: 450px;
+      float:left;
+      background-color: rgba(235, 235, 241, 0.842)
+      } 
+
+
+      #inscrit
+      {
+     font-family: 'Times New Roman', Times, serif
+       } ;
+
+
+
+
+#paramètre
+       {
+      color: rgb(251, 251, 253)
+        } 
+
+        #image
+     { 
+      bottom: 0px;    
+      text-align: center }
+
+#pied_page
+      {
+       width: 100%;
+       height: 86px;
+       background-color: white;
+       float: right;
+       } 
+
+
+
+
+  
