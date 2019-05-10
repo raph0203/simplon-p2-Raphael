@@ -1,0 +1,114 @@
+.burger {
+
+    width: 42px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
+    left: 200px;
+    top: 10px;
+    
+}
+
+
+body {
+
+    background-color: aqua;
+}
+
+h1{
+
+    text-decoration: underline;
+    position:relative;
+    bottom: 40px;
+    font-style: italic;
+    left: 7px;
+}
+
+#js {
+
+    width: 90px;
+    height: 90px;
+    position: relative;
+    left: 60px;
+    bottom: 30px;
+}
+
+#sidebar {
+position: fixed;
+width: 200px;
+height: 100%;
+background-color: gray;
+left: -200px;
+transition: all 500ms linear;
+top: 0px;
+}
+
+#sidebar.active {
+
+    left: 0px;
+}
+
+#sidebar ul li {
+
+    color :black;
+    list-style: block;
+    padding: 15px 10px; 
+    border bottom :1px solid rgba(100,100,100,O.3);
+    
+
+
+}
+
+.burger span {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    display: block;
+    position: absolute;
+    top:20%;
+    left:10px;
+    transition: background-color 0.5s ease-in-out;
+    transform: translateX(-20%)
+    
+}
+
+
+.burger span::before, .burger span::after {
+
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.burger span::before {
+    transform: translateY(-10px) 
+
+
+}
+
+.burger span::after {
+    transform: translateY(10px)
+
+
+}
+
+.burger.active span {
+
+    background-color: transparent;
+}
+
+.burger.active span::before {
+
+    transform: translateX(0px) rotateZ(45deg);
+}
+
+.burger.active span::after {
+
+    transform: translateX(0px) rotateZ(-45deg);
+}
+
+
