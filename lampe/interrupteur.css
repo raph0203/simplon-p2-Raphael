@@ -1,0 +1,59 @@
+
+body {
+
+    background-color: black
+}
+
+
+.interrupteur1 {
+    width: 40px;
+    height: 40px;
+    margin-top: 0px;
+    position: relative;
+    top: 200px;
+    right: 600px;
+    
+}
+
+.interrupteur2 {
+    width: 40px;
+    height: 40px;
+    margin-top: 0px;
+    position: relative;
+    top: 200px;
+    right: 600px;
+}
+
+.lampe1 {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    left: 450px;
+    top: 100px
+}
+.lampe2 {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    left: 450px; 
+    bottom: -100px;
+    rotate:40%;
+}
+
+
+#block1 {
+    width: 600px;
+    height: 600px;
+    float: left;
+}
+
+#block2 {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+
+
