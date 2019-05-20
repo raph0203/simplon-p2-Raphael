@@ -1,0 +1,350 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+
+/*Début de l'iconeburger*/
+
+.burger span {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    display: block;
+    position: absolute;
+    top:20%;
+    left:10px;
+    transition: background-color 0.5s ease-in-out;
+    transform: translateX(-20%)
+    
+}
+
+
+.burger span::before, .burger span::after {
+
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.burger span::before {
+    transform: translateY(-10px) 
+
+
+}
+
+.burger span::after {
+    transform: translateY(10px)
+
+
+}
+
+.burger.active span {
+
+    background-color: transparent;
+}
+
+.burger.active span::before {
+
+    transform: translateX(0px) rotateZ(45deg);
+}
+
+.burger.active span::after {
+
+    transform: translateX(0px) rotateZ(-45deg);
+}
+
+/*Fin de l'icone burger*/
+
+
+
+
+/* commencement menu burger*/
+
+.burger {
+
+    width: 42px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
+    left: 200px;
+    top: 70px;
+    
+}
+
+
+#sidebar {
+position: fixed;
+width: 200px;
+height: 100%;
+background-color: #424558;
+left: -200px;
+transition: all 500ms linear;
+top: 0px;
+}
+
+#sidebar.active {
+
+    left: 0px;
+}
+
+#sidebar ol li {
+
+    color :white;
+    list-style: block;
+    padding: 15px 10px; 
+    border bottom :1px solid rgba(100,100,100,O.3);
+    
+}
+
+
+h1{
+
+    text-decoration: underline;
+    color: white;
+    position:relative;
+    bottom: -10px;
+    font-style: italic;
+    left: 7px;
+}
+
+/*Fin menu burger */
+
+
+
+
+
+/* Début du menu déroulant horizontal*/
+
+nav {
+
+    width: 100%;
+    background-color: #424558;
+    
+
+}
+
+
+
+nav >ul {
+
+
+    margin: 0px;
+    padding: 0px;
+}
+
+
+nav >ul::after {
+
+content : "";
+display: block;
+clear : both;
+}
+
+
+nav >ul >li {
+
+    float: left;
+    position: relative;
+}
+
+
+nav >ul >li>a {
+
+    padding: 20px 30px;
+    color: #fff;
+}
+
+
+
+
+
+nav li {
+
+    list-style-type: none;
+}
+
+.submenu {
+
+    display: none;
+}
+
+
+
+nav a {
+
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+nav li:hover .submenu  {
+
+    display: inline-block;
+    position: absolute;
+    top : 100%;
+    left : 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+
+.submenu li {
+
+    border-bottom: 1px solid #CCC;
+}
+
+
+.submenu li a {
+
+    padding: 15px 30px;
+    font-size: 13px;
+    color : #222538;
+    width: 270px;
+}
+
+
+
+.menu-accueil :hover {
+
+    border-top : 1px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+
+.menu-pcote :hover {
+
+    border-top : 1px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+
+.menu-tourisme :hover {
+
+    border-top : 1px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+
+.menu-activite :hover {
+
+    border-top : 1px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menu-actualite :hover {
+
+    border-top : 1px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menu-decouverte :hover {
+
+    border-top : 1px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+
+.menu-autre :hover {
+
+    border-top : 1px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+
+
+
+.menu-pcote .submenu {
+
+    background-color: rgba(99, 96, 95,0.15);
+}
+
+
+.menu-tourisme .submenu {
+
+    background-color: rgba(99, 96, 95,0.15);
+}
+
+
+
+
+.menu-activite .submenu {
+
+    background-color: rgba(99, 96, 95,0.15);
+}
+
+
+
+
+
+.menu-actualite .submenu {
+
+    background-color: rgba(99, 96, 95,0.15);
+}
+
+
+
+
+.menu-autre .submenu {
+
+    background-color: rgba(99, 96, 95,0.15);
+}
+
+
+.submenu li:hover a {
+
+    color : #eee;
+    font-weight: bold;
+}
+
+
+.menu-accueil .submenu li :hover {
+
+    background-color: rgb(210,77, 60);
+}
+
+
+.menu-pcote .submenu li :hover {
+
+    background-color: rgb(210,77, 60);
+}
+
+
+.menu-tourisme .submenu li :hover {
+
+    background-color: rgb(210,77, 60);
+}
+
+.menu-activite .submenu li :hover {
+
+    background-color: rgb(210,77, 60);
+}
+
+.menu-actualite .submenu li :hover {
+
+    background-color: rgb(210,77, 60);
+}
+
+
+.menu-autre .submenu li :hover {
+
+    background-color: rgb(210,77, 60);
+}
+
+
+#tout {
+
+    position: relative;
+    left: 200px;
+    
+}
+
+/*Fin du menu déroulant horizontal*/
